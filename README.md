@@ -1,6 +1,6 @@
 # SmokeSentinel: Wildfire Smoke Exposure Nowcaster
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/smoke-sentinel/blob/main/notebooks/SmokeSentinel_Wildfire_Nowcast.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Manas2006/smoke-sentinel/blob/main/notebooks/SmokeSentinel_Wildfire_Nowcast.ipynb)
 
 SmokeSentinel is a machine learning system that predicts wildfire smoke exposure using multi-source data and graph-aware spatiotemporal models. The system combines NASA FIRMS hotspot data, NOAA HRRR-Smoke forecasts, and ground-based sensor measurements to provide accurate PM₂.₅ predictions.
 
@@ -100,4 +100,15 @@ MIT License - see LICENSE file for details
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request. 
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Quickstart
+
+### Run in Google Colab
+
+Click the badge above → press **Runtime ▸ Run all**.  
+The first cell clones the repo and installs just the extra packages, so runtime setup stays under 2 minutes.  If you only want a demo dataset, execute:
+
+```python
+!python scripts/download_sample.py
+``` 
