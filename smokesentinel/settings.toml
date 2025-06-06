@@ -1,0 +1,22 @@
+[firms]
+product = "VIIRS_SNPP_NRT"
+resolution = 375  # m
+base_url = "https://firms.modaps.eosdis.nasa.gov/api/area/csv"
+
+[hrrr]
+bucket = "https://noaa-hrrr-bdp-pds.s3.amazonaws.com"
+domain = "conus"
+product = "smoke10"  # surface PM₂.₅ µg m-3
+cycles = [0, 6, 12, 18]
+max_fhour = 48  # inclusive
+
+[openaq]
+base_url = "https://api.openaq.org/v3"
+page_size = 10000
+
+[purpleair]
+base_url = "https://api.purpleair.com/v1"
+
+[logging]
+level = "INFO"
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s" 
